@@ -25,7 +25,7 @@ while True:
     
     if emotion:
         print(f"Emozione rilevata: {emotion}")
-        with open("emotions.txt", "w") as file:
+        with open("emotions.txt", "a") as file:
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             file.write(f"{timestamp} - {emotion}\n")
 
